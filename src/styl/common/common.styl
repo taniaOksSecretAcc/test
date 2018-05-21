@@ -1,0 +1,22 @@
+@import "/utils/reset.styl"
+@import "variables.styl"
+
+global-reset()
+body
+  margin 0
+  padding 0
+  min-width 320px
+  font-size $main_font
+  width 100%
+  font-family 'Open Sans', sans-serif
+  font-size $main_font
+.main-wrapper
+  width 100%
+  max-width $container_width
+  margin auto
+  box-sizing border-box
+  @media(max-width $break)
+    width 100%
+  media-left-right($break, 60px, 60px)
+  media-left-right($media_mob, 30px, 30px)
+  

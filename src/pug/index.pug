@@ -1,0 +1,472 @@
+extends common/layout.pug
+block headScripts
+  link(rel="stylesheet", type="text/css", href="./css/index.css")
+
+block content
+  section.view
+    div.view-container.main-wrapper
+      h1.view-title Insurance list:
+      div.view-mnu
+        div.view-mnu__table
+          div.view-mnu__table_line
+          div.view-mnu__table_line
+          div.view-mnu__table_line
+          div.view-mnu__table_line
+        div.view-mnu__divider
+        div.view-mnu__grid
+          div.view-mnu__grid_square
+          div.view-mnu__grid_square
+          div.view-mnu__grid_square
+          div.view-mnu__grid_square
+  section.main
+    div.main-container.main-wrapper
+      div.main-view.main-view_table
+        div.main-view__block
+          div.main-view__header
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-1.jpg", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Insurcom
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+              div.main-view__desc_text.main-view__desc_block_covering Health
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type PPO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_plainum
+                  .main-view__desc_metal_text Platinum
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs $15
+              div.main-view__desc_text.main-view__desc_visits $75
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $6000
+              div.main-view__desc_text.main-view__desc_text_price $356/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-2.png", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Health Ins
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+              div.main-view__desc_text.main-view__desc_block_covering All-in-one
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type HMO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_silver
+                  .main-view__desc_metal_text Silver
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs 100%
+              div.main-view__desc_text.main-view__desc_visits $45
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $4500
+              div.main-view__desc_text.main-view__desc_text_price $611/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-3.jpg", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Dentalife
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+              div.main-view__desc_text.main-view__desc_block_covering Dental
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type EPO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_gold
+                  .main-view__desc_metal_text Gold
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs 100%
+              div.main-view__desc_text.main-view__desc_visits $75
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $5000
+              div.main-view__desc_text.main-view__desc_text_price $283/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-1.jpg", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Insurcom
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+              div.main-view__desc_text.main-view__desc_block_covering Health
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type PPO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_plainum
+                  .main-view__desc_metal_text Platinum
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs $15
+              div.main-view__desc_text.main-view__desc_visits $75
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $6000
+              div.main-view__desc_text.main-view__desc_text_price $356/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-2.png", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Health Ins
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+              div.main-view__desc_text.main-view__desc_block_covering All-in-one
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type HMO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_silver
+                  .main-view__desc_metal_text Silver
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs 100%
+              div.main-view__desc_text.main-view__desc_visits $45
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $4500
+              div.main-view__desc_text.main-view__desc_text_price $611/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-3.jpg", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Dentalife
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+              div.main-view__desc_text.main-view__desc_block_covering Dental
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type EPO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_gold
+                  .main-view__desc_metal_text Gold
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs 100%
+              div.main-view__desc_text.main-view__desc_visits $75
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $5000
+              div.main-view__desc_text.main-view__desc_text_price $283/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-1.jpg", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Insurcom
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+              div.main-view__desc_text.main-view__desc_block_covering Health
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type PPO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_plainum
+                  .main-view__desc_metal_text Platinum
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs $15
+              div.main-view__desc_text.main-view__desc_visits $75
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $6000
+              div.main-view__desc_text.main-view__desc_text_price $356/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+        div.main-view__block
+          div.main-view__header.main-view__header_hidden
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_name Company
+              div.main-view__header_text.main-view__header_block_covering Covering
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_block_type Type
+              div.main-view__header_text.main-view__header_block_metal Metal level
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_drugs 
+                .main-view__desc_qustion ?
+                |Drugs
+              div.main-view__header_text.main-view__header_visits
+                .main-view__desc_qustion ? 
+                |Primary care visits
+            div.main-view__header_block
+              div.main-view__header_text.main-view__header_deductible
+                .main-view__desc_qustion ?
+                |Yearly deductible
+              div.main-view__header_text.main-view__header_text_price Price
+            div.main-view__header_block.main-view__header_block_btns
+              div.main-view__header_text 
+              div.main-view__header_text 
+          div.main-view__desc
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_name
+                div.main-view__desc_company_logo
+                  img.main-view__desc_company_img(src="../img/company-2.png", alt="")
+                div.main-view__desc_company_name
+                  .main-view__desc_company_name_text Health Ins
+                  .main-view__desc_company_rating
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_on
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+                    .main-view__desc_company_rating_star.main-view__desc_company_rating_star_off
+              div.main-view__desc_text.main-view__desc_block_covering All-in-one
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_block_type
+                .main-view__desc_type HMO
+                .main-view__desc_qustion ?
+              div.main-view__desc_text.main-view__desc_block_metal
+                .main-view__desc_metal
+                  .main-view__desc_metal_color.main-view__desc_metal_color_silver
+                  .main-view__desc_metal_text Silver
+                  .main-view__desc_qustion ?
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_drugs 100%
+              div.main-view__desc_text.main-view__desc_visits $45
+            div.main-view__desc_block
+              div.main-view__desc_text.main-view__desc_deductible $4500
+              div.main-view__desc_text.main-view__desc_text_price $611/
+                span.main-view__desc_text_price_desc mon
+            div.main-view__desc_block.main-view__desc_block_btns
+              div.main-view__desc_text.main-view__desc_overview Overview
+              div.main-view__desc_text.main-view__desc_buy Buy
+      
